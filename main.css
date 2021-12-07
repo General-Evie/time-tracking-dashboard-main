@@ -5,17 +5,22 @@ html
     align-items: center;
     height: 300vh;
     background-color: hsl(226, 43%, 10%);
+    
 }
 
 ul
 {
+    
     display: inline-flex;
-    gap: 1rem;
+    gap: 3rem;
+    place-items: center;
+    padding: 0;
     list-style-type: none;
 }
 
 section
 {
+    border-radius: 1em;
     background-color: hsl(235, 46%, 20%);
 }
 
@@ -29,6 +34,11 @@ h2, .prev, nav
 {
     font-family: 'Rubik';
     font-weight: 400;
+}
+
+.main-card
+{
+    text-align: center;
 }
 
 .cards
