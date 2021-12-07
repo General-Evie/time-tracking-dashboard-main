@@ -6,6 +6,9 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
 
@@ -13,74 +16,89 @@
 <body>
 
   <section class="main-card">
+    <img src="images/image-jeremy.png" height="32px" width="32px" alt="">
     <span>Report for</span>
     <h1>Jeremy Robson</h1>
   
-    <ul>
-      <li>Daily</li>
-      <li>Weekly</li>
-      <li>Monthly</li>
-    </ul>
+    <nav>
+      <ul>
+        <li>Daily</li>
+        <li>Weekly</li>
+        <li>Monthly</li>
+      </ul>
+    </nav>
   </section>
 
   <section class="work">
-    <h2>Work</h2>
-    <p class="daily">5hrs</p> <!-- daily -->
-    <p class="daily-prev">Previous - 7hrs</p> <!-- daily -->
-    <p class="weekly">32hrs</p> <!-- weekly --> class="daily"
-    <p class="weekly-prev">Previous - 36hrs</p> <!-- weekly -->
-    <p class="monthly">103hrs</p> <!-- monthly -->
-    <p class="monthly-prev">Previous - 128hrs</p> <!-- monthly -->
+    <div class="cards">
+      <h2>Work</h2>
+      <p class="hrs" class="daily">5hrs</p> <!-- daily -->
+      <p class="prev" class="daily-prev">Previous - 7hrs</p> <!-- daily -->
+      <p class="hrs" class="weekly">32hrs</p> <!-- weekly --> 
+      <p class="prev" class="weekly-prev">Previous - 36hrs</p> <!-- weekly -->
+      <p class="hrs" class="monthly">103hrs</p> <!-- monthly -->
+      <p class="prev" class="monthly-prev">Previous - 128hrs</p> <!-- monthly -->
+    </div>
   </section>
 
   <section class="play">
-    <h2>Play</h2>
-    <p class="daily">1hr</p> <!-- daily -->
-    <p class="daily-prev">Previous - 2hrs</p> <!-- daily -->
-    <p class="weekly">10hrs</p> <!-- weekly -->
-    <p class="weekly-prev">Previous - 8hrs</p> <!-- weekly -->
-    <p class="monthly">23hrs</p> <!-- monthly -->
-    <p class="monthly-prev">Previous - 29hrs</p> <!-- monthly -->
+    <div class="cards">
+      <h2>Play</h2>
+      <p class="hrs" class="daily">1hr</p> <!-- daily -->
+      <p class="prev" class="daily-prev">Previous - 2hrs</p> <!-- daily -->
+      <p class="hrs" class="weekly">10hrs</p> <!-- weekly -->
+      <p class="prev" class="weekly-prev">Previous - 8hrs</p> <!-- weekly -->
+      <p class="hrs" class="monthly">23hrs</p> <!-- monthly -->
+      <p class="prev" class="monthly-prev">Previous - 29hrs</p> <!-- monthly -->
+    </div>
   </section>
 
   <section class="study">
-    <h2>Study</h2>
-    <p class="daily">0hrs</p> <!-- daily -->
-    <p class="daily-prev">Previous - 1hr</p> <!-- daily -->
-    <p class="weekly">4hrs</p> <!-- weekly -->
-    <p class="weekly-prev">Previous - 7hrs</p> <!-- weekly -->
-    <p class="monthly">13hrs</p> <!-- monthly -->
-    <p class="monthly-prev">Previous - 19hrs</p> <!-- monthly -->
+    <div class="cards">
+      <h2>Study</h2>
+      <p class="hrs" class="daily">0hrs</p> <!-- daily -->
+      <p class="prev" class="daily-prev">Previous - 1hr</p> <!-- daily -->
+      <p class="hrs" class="weekly">4hrs</p> <!-- weekly -->
+      <p class="prev" class="weekly-prev">Previous - 7hrs</p> <!-- weekly -->
+      <p class="hrs" class="monthly">13hrs</p> <!-- monthly -->
+      <p class="prev" class="monthly-prev">Previous - 19hrs</p> <!-- monthly -->
+    </div>
   </section>
 
   <section class="exercise">
-    <h2>Exercise</h2>
-    <p class="daily">1hr</p> <!-- daily -->
-    <p class="daily-prev">Previous - 1hr</p> <!-- daily -->
-    <p class="weekly">4hrs</p> <!-- weekly -->
-    <p class="weekly-prev">Previous - 5hrs</p> <!-- weekly -->
-    <p class="monthly">11hrs</p> <!-- monthly -->
-    <p class="monthly-prev">Previous - 18hrs</p> <!-- monthly -->
+    <div class="cards">
+      <h2>Exercise</h2>
+      <p class="hrs" class="daily">1hr</p> <!-- daily -->
+      <p class="prev" class="daily-prev">Previous - 1hr</p> <!-- daily -->
+      <p class="hrs" class="weekly">4hrs</p> <!-- weekly -->
+      <p class="prev" class="weekly-prev">Previous - 5hrs</p> <!-- weekly -->
+      <p class="hrs" class="monthly">11hrs</p> <!-- monthly -->
+      <p class="prev" class="monthly-prev">Previous - 18hrs</p> <!-- monthly -->
+    </div>
   </section>
 
   <section class="social">
-    <h2>Social</h2>
-    <p class="daily">1hr</p> <!-- daily -->
-    <p class="daily-prev">Previous - 3hrs</p> <!-- daily -->
-    <p class="weekly">5hrs</p> <!-- weekly -->
-    <p class="weekly-prev">Previous - 10hrs</p> <!-- weekly -->
-    <p class="monthly">21hrs</p> <!-- monthly -->
-    <p class="monthly-prev">Previous - 23hrs</p> <!-- monthly -->
+    <div class="cards">
+      <h2>Social</h2>
+      <p class="hrs" class="daily">1hr</p> <!-- daily -->
+      <p class="prev" class="daily-prev">Previous - 3hrs</p> <!-- daily -->
+      <p class="hrs" class="weekly">5hrs</p> <!-- weekly -->
+      <p class="prev" class="weekly-prev">Previous - 10hrs</p> <!-- weekly -->
+      <p class="hrs" class="monthly">21hrs</p> <!-- monthly -->
+      <p class="prev" class="monthly-prev">Previous - 23hrs</p> <!-- monthly -->
+    </div>
   </section>
 
   <section class="self">
-    <h2>Self Care</h2>
-    <p class="daily">0hrs</p> <!-- daily -->
-    <p class="daily-prev">Previous - 1hr</p> <!-- daily -->
-    <p class="weekly">2hrs</p> <!-- weekly -->
-    <p class="weekly-prev">Previous - 2hrs</p> <!-- weekly -->
-    <p class="monthly">7hrs</p> <!-- monthly -->
-    <p class="monthly-prev">Previous - 11hrs</p> <!-- monthly -->
+    <div class="cards">
+      <h2>Self Care</h2>
+      <p class="hrs" class="daily">0hrs</p> <!-- daily -->
+      <p class="prev" class="daily-prev">Previous - 1hr</p> <!-- daily -->
+      <p class="hrs" class="weekly">2hrs</p> <!-- weekly -->
+      <p class="prev" class="weekly-prev">Previous - 2hrs</p> <!-- weekly -->
+      <p class="hrs" class="monthly">7hrs</p> <!-- monthly -->
+      <p class="prev" class="monthly-prev">Previous - 11hrs</p> <!-- monthly -->
+    </div>
   </section>
 
   

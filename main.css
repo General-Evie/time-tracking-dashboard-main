@@ -1,5 +1,48 @@
+html
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300vh;
+    background-color: hsl(226, 43%, 10%);
+}
+
+ul
+{
+    display: inline-flex;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+section
+{
+    background-color: hsl(235, 46%, 20%);
+}
+
+h1, .hrs
+{
+    font-family: 'Rubik';
+    font-weight: 300;
+}
+
+h2, .prev, nav
+{
+    font-family: 'Rubik';
+    font-weight: 400;
+}
+
+.cards
+{
+    width: 90%;
+}
+
 .attribution 
 { 
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 15px;
     font-size: 11px; 
     text-align: center; 
 }
