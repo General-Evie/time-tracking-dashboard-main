@@ -15,7 +15,7 @@
 </head>
 <body>
 
-  <section class="main-card">
+  <section class="main-card" class="cards">
     <div class="profile">
       <img id="Ppic" src="images/image-jeremy.png" height="64px" width="64px" alt="">
       <div class="name">
@@ -26,7 +26,7 @@
   
     <nav>
       <ul>
-        <li>Daily</li>
+        <li onclick="showDaily();">Daily</li>
         <li>Weekly</li>
         <li>Monthly</li>
       </ul>
@@ -159,9 +159,13 @@
     </div>
   </section>
 
-  
+  <script>
+    document.getElementsByClassName('weekly-card')[0].style.display = 'none';
+    document.getElementsByClassName('monthly-card')[0].style.display = 'none';
 
+  </script>
 </body>
+
 <footer class="attribution">
   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
   Coded by <a href="https://github.com/General-Evie" target="_blank">Evie Dickman</a>.
