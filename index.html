@@ -27,8 +27,8 @@
     <nav>
       <ul>
         <li onclick="showDaily();">Daily</li>
-        <li>Weekly</li>
-        <li>Monthly</li>
+        <li onclick="showWeekly();">Weekly</li>
+        <li onclick="showMonthly();">Monthly</li>
       </ul>
     </nav>
   </section>
@@ -159,11 +159,7 @@
     </div>
   </section>
 
-  <script>
-    document.getElementsByClassName('weekly-card')[0].style.display = 'none';
-    document.getElementsByClassName('monthly-card')[0].style.display = 'none';
-
-  </script>
+  <script src="main.js"></script>
 </body>
 
 <footer class="attribution">

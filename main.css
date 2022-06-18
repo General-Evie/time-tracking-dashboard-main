@@ -68,6 +68,7 @@ span, .prev
 {
     margin-bottom: 1.5em;
     background-color: hsl(235, 46%, 20%);
+    grid-area: one;
 }
 
 .profile
@@ -87,7 +88,7 @@ span, .prev
 
 .cards
 {
-    margin-bottom: 1.5em;
+    /* margin-bottom: 1.5em; */
 }
 
 .content
@@ -95,7 +96,6 @@ span, .prev
     background-color: hsl(235, 46%, 20%);
     padding: 1em;
     border-radius: 1em;
-    columns: 2;
     /* position: relative; */
 }
 
@@ -108,6 +108,7 @@ span, .prev
 
 .work
 {
+    grid-area: two;
     padding-top: 2.5em;
     background-image: url(images/icon-work.svg);
     background-repeat: no-repeat;
@@ -119,6 +120,7 @@ span, .prev
 
 .play
 {
+    grid-area: three;
     padding-top: 2.5em;
     background-image: url(images/icon-play.svg);
     background-repeat: no-repeat;
@@ -129,6 +131,7 @@ span, .prev
 
 .study
 {
+    grid-area: four;
     padding-top: 2.5em;
     background-image: url(images/icon-study.svg);
     background-repeat: no-repeat;
@@ -139,6 +142,7 @@ span, .prev
 
 .exercise
 {
+    grid-area: five;
     padding-top: 2.5em;
     background-image: url(images/icon-exercise.svg);
     background-repeat: no-repeat;
@@ -149,6 +153,7 @@ span, .prev
 
 .social
 {
+    grid-area: six;
     padding-top: 2.5em;
     background-image: url(images/icon-social.svg);
     background-repeat: no-repeat;
@@ -159,6 +164,7 @@ span, .prev
 
 .self
 {
+    grid-area: seven;
     padding-top: 2.5em;
     background-image: url(images/icon-self-care.svg);
     background-repeat: no-repeat;
@@ -167,9 +173,13 @@ span, .prev
     background-color: hsl(43, 84%, 65%);
 }
 
-.daily-card
+.monthly-card 
 {
-    background-color: #fff;
+    display: none;
+}
+.weekly-card
+{
+    display: none;
 }
 
 #Ppic
@@ -182,7 +192,7 @@ span, .prev
 
 .attribution 
 { 
-    /* position: absolute; */
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
@@ -194,4 +204,150 @@ span, .prev
 .attribution a 
 { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 376px)
+{
+    html 
+    {
+        height: 100vh;
+    }
+
+    body 
+    {
+        display: grid;
+        grid-template-areas: 
+        'one two three four'
+        'one five six seven'
+        ;
+        gap: 2rem;
+    }
+
+    h1 
+    {
+        font-size: 2.5em;
+    }
+
+    h2
+    {
+        font-size: 1.25em;
+        margin-top: 0;
+    }
+
+    span 
+    {
+        font-size: .95rem;
+    }
+
+    ul 
+    {
+        display: grid;
+        justify-items: left;
+        font-size: 1.1em;
+        gap: 2.1rem;
+        max-width: 5rem;
+        margin: 1.5rem;
+        margin-top: 1.65em;
+    }
+
+    .profile
+    {
+        display: grid;
+        max-width: 10rem;
+        padding-top: 2rem;
+        padding-right: 4rem;
+        padding-bottom: 5rem;
+        border-radius: 1.5em;
+    }
+
+    .name
+    {
+        margin-top: 3rem;
+    }
+
+    .content
+    {  
+        padding: 2rem;
+        padding-right: 6rem;
+        min-width: 9rem;
+        border-radius: 1.5em;
+    }
+
+    .hrs
+    {
+        font-size: 3.5rem;
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+
+    .prev
+    {
+        margin-bottom: 0;
+    }
+
+    .main-card 
+    {
+        margin: 0;
+        border-radius: 1.5em;
+    }
+
+    .work
+    {
+        padding-top: 3em;
+        background-position: right;
+        background-position-y: -.7em;
+        background-position-x: 11em;
+        border-radius: 1.5em;
+    }
+
+    .play
+    {
+        padding-top: 3em;
+        background-position: right;
+        background-position-y: -.5em;
+        background-position-x: 11em;
+        border-radius: 1.5em;
+    } 
+
+    .study
+    {
+        padding-top: 3em;
+        background-position: right;
+        background-position-y: -.7em;
+        background-position-x: 11em;
+        border-radius: 1.5em;
+    }
+        
+    .exercise
+    {
+        padding-top: 3em;
+        background-position: right;
+        background-position-y: -.1em;
+        background-position-x: 11em;
+        border-radius: 1.5em;
+    }    
+
+    .social
+    {
+        padding-top: 3em;
+        background-position: right;
+        background-position-y: .4em;
+        background-position-x: 11.5em;
+        border-radius: 1.5em;
+    }    
+
+    .self
+    {
+        padding-top: 3em;
+        background-position: right;
+        background-position-y: -.7em;
+        background-position-x: 12em;
+        border-radius: 1.5em;
+    }
+
+    #Ppic 
+    {
+        height: 80px;
+        width: 80px;
+    }
 }
