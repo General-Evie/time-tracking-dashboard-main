@@ -3,7 +3,7 @@ html
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300vh;
+    height: 190vh;
     background-color: hsl(226, 43%, 10%);
     
 }
@@ -38,9 +38,9 @@ h1
 h2 
 {
     font-size: 1em;
+    margin-top: .5em;
+    margin-bottom: .5em;
 }
-
-
 
 h1, .hrs
 {
@@ -54,7 +54,7 @@ h2, span, nav, .prev
     font-weight: 400;
 }
 
-span, nav, .prev
+span, nav, .prev, .button
 {
     color: hsl(236, 100%, 87%);
 }
@@ -88,7 +88,7 @@ span, .prev
 
 .cards
 {
-    /* margin-bottom: 1.5em; */
+    margin-bottom: 1.5em;
 }
 
 .content
@@ -96,15 +96,38 @@ span, .prev
     background-color: hsl(235, 46%, 20%);
     padding: 1em;
     border-radius: 1em;
-    /* position: relative; */
+    position: relative;
 }
 
-/* .banner
+.button
 {
-    z-index: -1;
-    right: 0;
+    position: absolute;
+    font-size: 1.75rem;
+    font-weight: 600;
     top: 0;
-} */
+    right: 0;
+    margin-top: .6rem;
+    margin-right: 1rem;   
+}
+
+.hrs 
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 2rem;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.prev
+{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 2rem;
+    margin: 0;
+}
 
 .work
 {
@@ -116,6 +139,8 @@ span, .prev
     background-position-y: -.5em;
     background-position-x: 12.5em;
     background-color: hsl(15, 100%, 70%);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 
 .play
@@ -127,6 +152,8 @@ span, .prev
     background-position-y: -.5em;
     background-position-x: 12.5em;
     background-color: hsl(195, 74%, 62%);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 
 .study
@@ -138,6 +165,8 @@ span, .prev
     background-position-y: -.5em;
     background-position-x: 12.5em;
     background-color: hsl(348, 100%, 68%);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 
 .exercise
@@ -149,6 +178,8 @@ span, .prev
     background-position-y: -.5em;
     background-position-x: 12.5em;
     background-color: hsl(145, 58%, 55%);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 
 .social
@@ -160,6 +191,8 @@ span, .prev
     background-position-y: -.5em;
     background-position-x: 12.5em;
     background-color: hsl(264, 64%, 52%);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 
 .self
@@ -171,12 +204,36 @@ span, .prev
     background-position-y: -.5em;
     background-position-x: 12.5em;
     background-color: hsl(43, 84%, 65%);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+li:hover,
+li:focus,
+.button:hover,
+.button:focus 
+{
+    cursor: pointer;
+    color: #fff;
+}
+
+.content:hover,
+.content:focus
+{
+    cursor: pointer;
+    background-color: hsl(235, 45%, 61%);
+}
+
+.daily-card 
+{
+    columns: 2;
 }
 
 .monthly-card 
 {
     display: none;
 }
+
 .weekly-card
 {
     display: none;
@@ -193,7 +250,7 @@ span, .prev
 .attribution 
 { 
     position: absolute;
-    bottom: 0;
+    bottom: -88vh;
     left: 0;
     right: 0;
     margin: 15px;
@@ -250,6 +307,11 @@ span, .prev
         margin-top: 1.65em;
     }
 
+    .cards
+    {
+        margin: 0;
+    }
+
     .profile
     {
         display: grid;
@@ -273,6 +335,16 @@ span, .prev
         border-radius: 1.5em;
     }
 
+    .button
+    {
+        font-size: 2rem;
+        font-weight: 600;
+        top: 0;
+        right: 0;
+        margin-top: 1rem;
+        margin-right: 2rem;
+    }
+
     .hrs
     {
         font-size: 3.5rem;
@@ -282,6 +354,8 @@ span, .prev
 
     .prev
     {
+        justify-content: start;
+        margin-top: 1.2rem;
         margin-bottom: 0;
     }
 
@@ -298,6 +372,8 @@ span, .prev
         background-position-y: -.7em;
         background-position-x: 11em;
         border-radius: 1.5em;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
     }
 
     .play
@@ -307,6 +383,8 @@ span, .prev
         background-position-y: -.5em;
         background-position-x: 11em;
         border-radius: 1.5em;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
     } 
 
     .study
@@ -316,6 +394,8 @@ span, .prev
         background-position-y: -.7em;
         background-position-x: 11em;
         border-radius: 1.5em;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
     }
         
     .exercise
@@ -325,6 +405,8 @@ span, .prev
         background-position-y: -.1em;
         background-position-x: 11em;
         border-radius: 1.5em;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
     }    
 
     .social
@@ -334,6 +416,8 @@ span, .prev
         background-position-y: .4em;
         background-position-x: 11.5em;
         border-radius: 1.5em;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
     }    
 
     .self
@@ -343,6 +427,18 @@ span, .prev
         background-position-y: -.7em;
         background-position-x: 12em;
         border-radius: 1.5em;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+
+    .daily-card 
+    {
+        columns: 1;
+    }
+
+    .attribution
+    {
+        bottom: 0;
     }
 
     #Ppic 
