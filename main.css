@@ -17,13 +17,14 @@ section
 nav
 {
     text-align: center;
+    color: hsl(236, 100%, 87%, .4);
 }
 
 ul
 {
     
     display: inline-flex;
-    gap: 3rem;
+    gap: 2.5rem;
     place-items: center;
     padding: .5rem;
     list-style-type: none;
@@ -54,7 +55,7 @@ h2, span, nav, .prev
     font-weight: 400;
 }
 
-span, nav, .prev, .button
+span, .prev, .button
 {
     color: hsl(236, 100%, 87%);
 }
@@ -110,6 +111,34 @@ span, .prev
     margin-right: 1rem;   
 }
 
+.daily-work, .daily-play, .daily-study,
+.daily-exercise, .daily-social, .daily-self,
+.weekly-work, .weekly-play, .weekly-study,
+.weekly-exercise, .weekly-social, .weekly-self,
+.monthly-work, .monthly-play, .monthly-study,
+.monthly-exercise, .monthly-social, .monthly-self   
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rubik';
+    font-weight: 300;
+    font-size: 1em;
+    color: #fff;
+}
+
+.daily-work-prev, .daily-play-prev, .daily-study-prev,
+.daily-exercise-prev, .daily-social-prev, .daily-self-prev,
+.weekly-work-prev, .weekly-play-prev, .weekly-study-prev,
+.weekly-exercise-prev, .weekly-social-prev, .weekly-self-prev,
+.monthly-work-prev, .monthly-play-prev, .monthly-study-prev,
+.monthly-exercise-prev, .monthly-social-prev, .monthly-self-prev  
+{
+    font-family: 'Rubik';
+    font-size: 1em;
+    margin-left: .25ch;
+}
+
 .hrs 
 {
     display: flex;
@@ -118,6 +147,7 @@ span, .prev
     height: 2rem;
     font-size: 1.5em;
     margin: 0;
+    color: #fff;
 }
 
 .prev
@@ -125,6 +155,7 @@ span, .prev
     display: flex;
     justify-content: end;
     align-items: center;
+
     height: 2rem;
     margin: 0;
 }
@@ -229,14 +260,21 @@ li:focus,
     columns: 2;
 }
 
-.monthly-card 
-{
-    display: none;
-}
-
 .weekly-card
 {
     display: none;
+    columns: 2;
+}
+
+.monthly-card 
+{
+    display: none;
+    columns: 2;
+}
+
+.highlight
+{
+    color: #fff;
 }
 
 #Ppic
@@ -291,7 +329,7 @@ li:focus,
         margin-top: 0;
     }
 
-    span 
+    .Ppic-span 
     {
         font-size: .95rem;
     }
@@ -332,6 +370,7 @@ li:focus,
         padding: 2rem;
         padding-right: 6rem;
         min-width: 9rem;
+        max-width: 5rem;
         border-radius: 1.5em;
     }
 
@@ -355,6 +394,7 @@ li:focus,
     .prev
     {
         justify-content: start;
+        font-size: 1em;
         margin-top: 1.2rem;
         margin-bottom: 0;
     }
@@ -432,6 +472,16 @@ li:focus,
     }
 
     .daily-card 
+    {
+        columns: 1;
+    }
+
+    .weekly-card
+    {
+        columns: 1;
+    }
+
+    .monthly-card
     {
         columns: 1;
     }
